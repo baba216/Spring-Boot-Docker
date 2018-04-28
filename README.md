@@ -11,7 +11,7 @@ Setup Steps:
 
 1- Install Docker on host machine
 
-After this either you can directly pull Docker image from Docker Hub and follow below mentioned step to run the app  or you can create your own docker image and push it a docker hub and then do a pull on any other host machine and follow the below mentioned steps
+After this either you can directly pull Docker image from Docker Hub and follow below mentioned step to run the app  or you can create your own docker image(find the steps, mentioned later) and push it a docker hub and then do a pull on any other host machine and follow the below mentioned steps
 
 
 2- run this command 
@@ -19,6 +19,8 @@ After this either you can directly pull Docker image from Docker Hub and follow 
 ```sh
 docker pull shubham108/spring_docker
 ```
+where shubham108/spring_docker is the name of user-name/repo
+
 
 3- check if image is pulled correctly
 ```sh
@@ -51,7 +53,7 @@ For creating your own image from Dockerfile.
 ```sh
 docker build -t shubham108/spring_docker:latest .
 ```
-Docker picks up DOckerfile from the current directory to create an image
+Docker picks up Dockerfile from the current directory to create an image
 
 3-
 ```sh
